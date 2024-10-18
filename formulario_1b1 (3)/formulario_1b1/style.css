@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: rgb(243, 172, 85);
+    --text-color: rgb(241, 237, 237);
+    --nav-bg-color: orange;
+    --btn-bg-color: rgba(0, 0, 0, 0.548);
+    --btn-text-color: orange;
+    --form-bg: rgb(243, 243, 243);
+    --input-border: #555;
+    --input-bg: white;
+    --text-color: black;
+    --btn-bg: orange;
+}
+
+.dark-mode {
+    --bg-color: rgb(197, 158, 112);
+    --text-color: rgb(230, 176, 140);
+    --nav-bg-color: rgb(77, 53, 8);
+    --btn-bg-color: rgb(90, 67, 4);
+    --btn-text-color: rgb(227, 162, 42);
+    --form-bg: rgb(134, 116, 80);
+    --input-border: #c27c59d6;
+    --input-bg: rgb(112, 85, 54);
+    --text-color: rgb(255, 253, 251);
+    --btn-bg: rgb(69, 51, 18);
+}
+
+body {
+    font-family: Baumans;
+    line-height: 1.5;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+nav {
+    background-color: var(--nav-bg-color);
+    padding: 16px;
+    overflow: hidden;
+    clear: both;
+}
+
+.logo {
+    float: left;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#dark-mode-botao {
+    float: right;
+    background-color: var(--btn-bg-color);
+    color: var(--btn-text-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form {
+    background-color: var(--form-bg);
+    padding: 15px;
+}
+
+fieldset {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 14px;
+    background-color: #c3ad73;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+label {
+    display: block;
+}
+
+input[type="text"],
+input[type="email"], 
+input[type="tel"],
+input[type="date"],
+select
+textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid var(--input-border);
+    border-radius:4px ;
+    font-size: 14px;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+}
+
+input[type="submit"] {
+    background-color: var(--btn-bg);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: orangered;
+}
+
+.radio-option,
+.checkbox-option {
+    display:inline-block;
+    background-color: rgb(245, 178, 92);
+    margin-right: 15px;
+}
+
+.radio-option label,
+.checkbox-option label {
+    display: inline;
+}
+
+
+
